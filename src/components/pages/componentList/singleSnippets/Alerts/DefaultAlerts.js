@@ -7,11 +7,12 @@ import GithubIcon from '../../../../../assets/GithubIcon.svg'
 import copyIcon from '../../../../../assets/copyIcon.svg'
 
 export const DefaultAlerts = () => {
-    const codeString = '(num) => num + 1';
+    
     return(
         <main className=' border-b border-t mt-8 mb-8'>
                 <SyntaxHighlighter language="javascript" style={dark}>
-                        {codeString}
+
+
                 </SyntaxHighlighter>
             <div className=' mt-8 '>
                 <h2 className=' font-bold text-white text-lg ' id="default-alerts">Default alerts</h2>
