@@ -5,13 +5,12 @@ import { TableOfContents } from "./TableOfContents"
 
 export const Alerts = () => {
 
-  return(
-              
-          <main id="content-wrapper" class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible">
+  return(            
+          <div class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible">
             <div class="flex w-full">
             <div class="flex-auto pt-6 min-w-0 max-w-4xl xl:px-8 lg:pt-10 pb:12 xl:pb-24 lg:pb-16">
               <div class="pb-4 mb-10 border-b border-gray-200 dark:border-gray-800">
-              <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-white" id="content">Tailwind CSS Alerts - Flowbite</h1>
+              <h1 class="inline-block mb-2 text-3xl font-extrabold tracking-tight text-white" id="content">Tailwind CSS Alerts</h1>
               <p class="mb-4 text-lg text-gray-500 dark:text-gray-400">Show contextual information to your users using alert elements based on Tailwind CSS</p>
               </div>
               <div id="mainContent">
@@ -20,8 +19,8 @@ export const Alerts = () => {
                 <p>Flowbite also includes dismissable alerts which can be hidden by the users by clicking on the close icon.</p>
                 </div>
 
-            <DefaultAlerts />
-            <AlertsWithIcons />
+              <DefaultAlerts />
+              <AlertsWithIcons />
 
 
 <div class="mt-8 -mb-5">
@@ -517,8 +516,7 @@ A simple info alert with an <span class="token tag"><span class="token tag"><spa
 </div>
 </div>
 </div>
-</main>
-
+</div>
 
 )
 }

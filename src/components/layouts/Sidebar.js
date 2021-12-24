@@ -6,8 +6,7 @@ import { Alerts } from "../pages/componentList/singleSnippets/Alerts/Alerts";
 
 const Sidebar = ()  => {
     return(
-                <aside className="fixed inset-0 flex-none h-full w-full lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-60 xl:w-72 lg:block hidden">
-                    <div className="max-w-2xs h-full overflow-y-auto scrolling-touch lg:h-screen lg:block lg:sticky overflow-hidden top:24 lg:top-12 bg-myBg dark:bg-gray-900 mr-24 lg:mr-0 ">
+            <div className="max-w-2xs h-full overflow-y-auto scrolling-touch lg:h-screen lg:block lg:sticky overflow-hidden top:24 lg:top-12 bg-myBg dark:bg-gray-900 mr-24 lg:mr-0 ">
                 <nav className="px-1 pt-16 pl-3 lg:pl-0 lg:pt-2 overflow-y-auto font-medium text-base lg:text-sm pb-10 lg:pb-20 sticky?lg:h-(screen-18)" aria-label="Docs navigation"><ul className="list-unstyled mb-0">
                         <li className="mt-8">
                         <h5 className="mb-3 lg:mb-3 uppercase tracking-wide font-semibold text-sm lg:text-xs text-white">Getting started</h5>
@@ -53,7 +52,7 @@ const Sidebar = ()  => {
                         <h5 className="mb-3 lg:mb-3 uppercase tracking-wide font-semibold text-sm lg:text-xs text-white">Components</h5>
                         <ul className="list-unstyled fw-normal py-1 small">
                             <li>
-                                <a href="/components/alerts/" className="py-2 transition-colors duration-200 relative block hover:text-blue-600 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Alerts </a>
+                                <a  href="/components/alerts" className="py-2 transition-colors duration-200 relative block hover:text-blue-600 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Alerts </a>
                             </li>
                             <li>
                                 <a href="/docs/components/badge/" className="py-2 transition-colors duration-200 relative block hover:text-blue-600 text-gray-500 dark:text-gray-400 dark:hover:text-white ">Badge </a>
@@ -116,9 +115,6 @@ const Sidebar = ()  => {
                     </ul>
                 </nav>
                 </div>
-
-
-                    </aside>
     )
 }
 

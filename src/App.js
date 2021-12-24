@@ -8,7 +8,7 @@ import Footer from "./components/layouts/Footer";
 import Sidebar from "./components/layouts/Sidebar";
 import Home from "./components/layouts/Home";
 import Buttons from "./components/pages/componentList/singleSnippets/Buttons";
-import { SingleComponent } from "./components/pages/SingleComponent";
+import { Components } from "./components/pages/Components";
 import { Alerts } from "./components/pages/componentList/singleSnippets/Alerts/Alerts";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Routes>
             <Route path = '/' element={ <Home /> } />
             <Route path = '/sidebar' element={ <Sidebar /> } />
-            <Route path = '/components/' element={ <SingleComponent /> } />
+            <Route path = '/components/' element={ <Components /> } />
             <Route path = '/components/alerts' element={ <Alerts /> } />
             <Route path = '/components/snippets/buttons' element={ <Buttons /> } />
           </Routes>
