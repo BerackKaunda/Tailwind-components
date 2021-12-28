@@ -7,7 +7,7 @@ import { TableOfContents } from "./TableOfContents"
 export const Alerts = () => {
 
   return(            
-          <div class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible">
+          <div  class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible">
             <div class="flex w-full">
             <div class="flex-auto pt-6 min-w-0 max-w-4xl xl:px-8 lg:pt-10 pb:12 xl:pb-24 lg:pb-16">
               <div class="pb-4 mb-10 border-b border-gray-200 dark:border-gray-800">

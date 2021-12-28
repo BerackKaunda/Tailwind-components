@@ -1,6 +1,12 @@
 //External imports
 import React from 'react'
 
+//
+import { FaGithub } from "react-icons/fa";
+import { FaColumns } from "react-icons/fa";
+import { FaCogs } from "react-icons/fa";
+import { FaMoon  } from "react-icons/fa";
+
 
 
 const Navbar =() => {
@@ -8,20 +14,27 @@ const Navbar =() => {
         <nav className='bg-myBg sticky top-0 z-10 w-full h-auto shadow-md '>
             <div className=' flex justify-between py-5 px-10'>
                 <div className=''>
-                    <h1 className=' text-white font-medium text-xl'>
+                    <h1 className=' text-white font-medium text-2xl'>
                         Tailstrap
                     </h1>
                 </div>
-                <div>
-                    <ul className=' flex space-x-32 text-gray-400 font-medium text-lg font-sans ' >
-                        <li className='hover:text-blue-600'><a href="/">Components library</a></li>
-                        <li className='hover:text-blue-600'><a href="/">Templates library</a></li>
-                        <li className='hover:text-blue-600'> <a href="/">License</a> </li>
-                    </ul>
-                </div>
-                <div>
-                    <button className=' bg-blue-600 px-5 py-2 rounded font-medium text-white hover:text-gray-400 hover:bg-blue-900'>
-                        <a href="/"> Buy </a>
+
+                <div className='flex space-x-6'>
+                    <button href='' className='navBtn rounded-tl-md'>
+                    <a href="">Components</a>
+                    <FaCogs />
+                    </button>
+                    <button href='' className='navBtn rounded-tr-md '>
+                    <a href="">Templates</a> 
+                   <FaColumns />
+                    </button>
+                    <button href='' className='navBtn rounded-bl-md'>
+                    <a href="">Github</a>
+                    <FaGithub />
+                    </button>
+                    <button href='' className='navBtn rounded-br-md'>
+                    <a href="">Dark theme</a> 
+                    <FaMoon />
                     </button>
                 </div>
             </div>
