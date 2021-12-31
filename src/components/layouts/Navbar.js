@@ -20,19 +20,19 @@ const Navbar =() => {
                 </div>
 
                 <div className='flex space-x-6'>
-                    <button href='' className='navBtn rounded-tl-md'>
+                    <button href='' className='navBtn rounded-tr-md rounded-bl-md rounded-br-md hover:transform hover:duration-300 hover:delay-150 hover:scale-110'>
                     <a href="">Components</a>
                     <FaCogs />
                     </button>
-                    <button href='' className='navBtn rounded-tr-md '>
+                    <button href='' className='navBtn rounded-tl-md rounded-bl-md rounded-br-md hover:transform hover:duration-300 hover:delay-150 hover:scale-110'>
                     <a href="">Templates</a> 
-                   <FaColumns />
+                    <FaColumns />
                     </button>
-                    <button href='' className='navBtn rounded-bl-md'>
+                    <button href='' className='navBtn rounded-tl-md rounded-tr-md rounded-bl-md hover:transform hover:duration-300 hover:delay-150 hover:scale-110'>
                     <a href="">Github</a>
                     <FaGithub />
                     </button>
-                    <button href='' className='navBtn rounded-br-md'>
+                    <button href='' className='navBtn rounded-tr-md rounded-tl-md rounded-br-md hover:transform hover:duration-300 hover:delay-150 hover:scale-110'>
                     <a href="">Dark theme</a> 
                     <FaMoon />
                     </button>

@@ -22,5 +22,5 @@ code {
   @apply text-gray-500 py-1
 }
 .navBtn {
-  @apply flex items-center space-x-1 text-sm text-gray-400 font-medium border border-gray-400 px-3 hover:border-purple-700 hover:text-purple-700
+  @apply flex items-center space-x-1 text-sm text-gray-400 font-medium border border-gray-400 px-3
 }
