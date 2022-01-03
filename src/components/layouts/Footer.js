@@ -6,7 +6,7 @@ const Footer =() => {
     return(
 
         //Footer starts
-        <footer className=' p-16 '>
+        <footer className='p-16 bg-gray-800'>
             <div className=' grid grid-cols-6 gap-16'>
                 <div className=' col-span-2 '>
                 <h1 className='flex text-white font-medium text-xl py-3'>
