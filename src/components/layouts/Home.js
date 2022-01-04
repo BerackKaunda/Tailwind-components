@@ -9,9 +9,9 @@ import { FaCogs } from "react-icons/fa";
 
 
 //Local imports
-import Snippets from '../pages/componentList/Snippets'
 import Video from '../../assets/inspect-demo.mp4'
 import Berack from '../../assets/favicon.jpg'
+import Tailwind from '../../assets/Tailwind.png'
 
 
 
@@ -51,7 +51,7 @@ const Home =() => {
 
             <div className=' grid grid-cols-3 gap-3 m-24 py-12'>
                 <div className='col col-span-2'>
-                <div className='flex flex-row gap-6'>
+                <div className='grid grid-cols-3 gap-6'>
                     <div className='block col '>
                         <button className=' rounded-md p-3 bg-purple-700 '>
                             <span className='text-white text-xl'>
@@ -97,10 +97,6 @@ const Home =() => {
                         </div>
                     </div>
 
-
-                    
-                </div>
-                <div className='flex flex-row gap-6'>
                     <div className='block col '>
                         <button className=' rounded-md p-3 bg-purple-700 '>
                             <span className='text-white text-xl'>
@@ -116,22 +112,23 @@ const Home =() => {
                         </div>
                     </div>
 
-                    <div className='block col mt-10'>
+                    <div className='block col mt-6'>
                         <button className=' rounded-md p-3 bg-purple-700 '>
                             <span className='text-white text-xl'>
                             <FaCogs />
                             </span>
                         </button>
                         <div>
-                            <h2 className='font-medium text-white '>
-                            .05 Fully Responsive
+                            <h2 className='font-medium text-white leading-tight'>
+                            .05 <span className='text-purple-500'> Fully </span> 
+                            Responsive
                             </h2>
                             <p className='text-gray-500 text-sm'>Regardless of the screen size, the website content will naturally fit the given resolution.
                             </p>
                         </div>
                     </div>
 
-                    <div className='block col mt-20'>
+                    <div className='block col mt-12'>
                         <button className=' rounded-md p-3 bg-purple-700 '>
                             <span className='text-white text-xl'>
                             <FaCogs />
@@ -144,9 +141,7 @@ const Home =() => {
                             <p className='text-gray-500 text-sm'>Regardless of the screen size, the website content will naturally fit the given resolution.
                             </p>
                         </div>
-                    </div>
-
-                    
+                    </div>                    
                 </div>
                 </div>
                 <div className='col px-4'>
@@ -226,6 +221,92 @@ const Home =() => {
                 <div className='col-span-2'>
                     <video class="rounded-md shadow-lg" playsinline="" autoplay="" muted="" src={Video} type="video/mp4"></video>
                 </div>
+            </div>
+
+            <div className=' m-10 p-8'>
+                <h1 className='flex justify-start text-gray-400 text-2xl font-medium tracking-wide leading-tight p-4 '>
+                    Some Popular Bundles
+                </h1>
+            <div className='grid grid-cols-3 gap-8'>
+                <div className='grid col px-4'>
+                    <div className='bg-gradient-to-b from-purple-700 to-blue-500 rounded-lg py-20 px-4 '>
+                        <div className='flex justify-start items-center space-x-2 pt-10'>
+                            <span className='border py-3 px-3 rounded-full text-white text-2xl '><SiHtml5 /></span>
+                            <span className='border py-3 px-3 rounded-full text-white text-2xl '><SiTailwindcss /></span>
+                            <span className='border py-3 px-3 rounded-full text-white text-2xl '><SiReact /></span>
+                        </div>
+                        <div className='pt-10'>
+                        <h1 className='text-white text-2xl font-bold font-mono leading-tight'>
+                        Browse this month’s best selling themes
+                        </h1>
+                        <p className='py-4 text-white text-sm tracking-wider '>
+                        The best web themes and templates have arrived.
+                        </p>
+                        </div>
+                        <div className='flex justify-start py-4'>
+                        <button className='border text-white font-bold py-2 px-4 rounded-3xl '>
+                                Explore
+                        </button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div className='grid col-span-2'>
+                    <div className='grid grid-cols-2 gap-8 '>
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <img src={ Tailwind } alt="" />
+                        </div>
+                        <div>
+                            <img src={ Tailwind } alt="" />
+                        </div>
+                        <div>
+                            <img src={ Tailwind } alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='flex justify-center p-8 mt-10'>
+                <button className='bg-gradient-to-r from-purple-500 to-purple-700 px-6 py-2 text-white font-medium tracking-wider hover:transform hover:scale-110 hover:duration-300 hover:ease-in-out rounded-3xl'>
+                    View All Products
+                </button>
+            </div>
             </div>
 
             <div className='grid grid-cols-3 gap-4 m-10 p-8'>  
