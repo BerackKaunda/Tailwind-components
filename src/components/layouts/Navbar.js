@@ -11,7 +11,7 @@ import { FaMoon  } from "react-icons/fa";
 
 const Navbar =() => {
     return(
-        <nav className='bg-myBg sticky top-0 z-10 w-full h-auto shadow-md '>
+        <nav className='bg-gray-800 sticky top-0 z-10 w-full h-auto shadow-md '>
             <div className=' flex justify-between py-5 px-10'>
                 <div className=''>
                     <h1 className=' text-white font-medium text-2xl'>

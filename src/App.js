@@ -10,6 +10,8 @@ import Home from "./components/layouts/Home";
 import Buttons from "./components/pages/componentList/singleSnippets/Buttons";
 import { Components } from "./components/pages/Components";
 import { Alerts } from "./components/pages/componentList/singleSnippets/Alerts/Alerts";
+import { Templates } from "./components/pages/componentList/templates/Templates";
+import { SingleTemplate } from "./components/pages/componentList/templates/SingleTemplate";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path = '/components/' element={ <Components /> } />
             <Route path = '/components/alerts' element={ <Alerts /> } />
             <Route path = '/components/snippets/buttons' element={ <Buttons /> } />
+            <Route path = '/templates' element={ <Templates /> } />
+            <Route path = '/templates/template' element={ <SingleTemplate /> } />
           </Routes>
 
       </div>

@@ -44,8 +44,6 @@ const Home =() => {
                 </h1>
                 <p className='text-gray-400 text-center px-36 text-2xl font-medium tracking-tight'>
                 Start developing with an open-source library of over 400+ web components and interactive elements built with the utility classes from Tailwind CSS
-
-
                 </p>
                     </div> 
 
@@ -290,21 +288,120 @@ const Home =() => {
                             </div>
                             
                         </div>
-                        <div>
-                            <img src={ Tailwind } alt="" />
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
                         </div>
-                        <div>
-                            <img src={ Tailwind } alt="" />
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
                         </div>
-                        <div>
-                            <img src={ Tailwind } alt="" />
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <div className='flex justify-center p-8 mt-10'>
                 <button className='bg-gradient-to-r from-purple-500 to-purple-700 px-6 py-2 text-white font-medium tracking-wider hover:transform hover:scale-110 hover:duration-300 hover:ease-in-out rounded-3xl'>
-                    View All Products
+                    <a href="/templates"> View All Products</a>
                 </button>
             </div>
             </div>
