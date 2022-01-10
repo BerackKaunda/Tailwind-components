@@ -24,8 +24,8 @@ const Navbar =() => {
                     <a href="">Components</a>
                     <FaCogs />
                     </button>
-                    <button href='' className='navBtn rounded-tl-md rounded-bl-md rounded-br-md hover:transform hover:duration-300 hover:delay-150 hover:scale-110'>
-                    <a href="">Templates</a> 
+                    <button className='navBtn rounded-tl-md rounded-bl-md rounded-br-md hover:transform hover:duration-300 hover:delay-150 hover:scale-110'>
+                    <a href="/templates">Templates</a> 
                     <FaColumns />
                     </button>
                     <button href='' className='navBtn rounded-tl-md rounded-tr-md rounded-bl-md hover:transform hover:duration-300 hover:delay-150 hover:scale-110'>

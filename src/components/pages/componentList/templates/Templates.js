@@ -1,7 +1,6 @@
 //External Imports
-import { SiTailwindcss } from "react-icons/si"
-import { SiHtml5 } from "react-icons/si"
-import { SiReact } from "react-icons/si"
+import {SiHtml5, SiReact, SiNodedotjs, SiTailwindcss, SiCss3 } from "react-icons/si"
+
 
 //Local Imports
 import Tailwind from '../../../../assets/Tailwind.png'
@@ -26,26 +25,61 @@ export const Templates = () => {
                 </div>
                 <div className="col relative w-full h-full">
                     <div className="absolute top-0 bottom-0 left-0 right-0 m-auto border border-gray-400 w-28 h-28 rounded-full "> 
-                        <div className='absolute flex bottom-0 left-0 -mb-3'>
-                            <span className='border bg-white py-3 px-3 rounded-full text-indigo-800 text-2xl'><SiHtml5 /></span>
+                        <div className='absolute flex bottom-0 left-0 -mb-3 '>
+                        <div className='relative tooltipCont'>
+                                <span className='flex border p-3 rounded-full bg-white text-blue-800 text-2xl'><SiReact /></span>                                
+                            <div className='tooltip absolute my-1 z-10'>
+                                <span className='flex justify-center items-center py-2 px-4 bg-white rounded-md text-indigo-700'>
+                                    React
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                        </div>
+                        </div>
                     <div className="absolute top-0 bottom-0 left-0 right-0 m-auto border border-gray-400 w-64 h-64 rounded-full ">
                         <div className='absolute flex top-0 right-0 m-3'>
-                            <span className='border bg-white py-3 px-3 rounded-full text-indigo-800 text-2xl'><SiHtml5 /></span>
+                        <div className='relative tooltipCont'>
+                                <span className='flex border p-3 rounded-full bg-white text-blue-800 text-2xl'><SiTailwindcss /></span>                                
+                            <div className='tooltip absolute my-1 z-10'>
+                                <span className='flex justify-center items-center py-2 px-4 bg-white rounded-md text-indigo-700'>
+                                    TailwindCss
+                                </span>
+                            </div>
+                        </div>
                         </div>
                         
                         
                     </div> 
                     <div className="absolute  top-0 bottom-0 left-0 right-0 m-auto border border-gray-400 w-96 h-96 rounded-full ">
                         <div className='absolute flex top-0 left-0 m-8'>
-                            <span className='border bg-white py-3 px-3 rounded-full text-indigo-800 text-2xl'><SiHtml5 /></span>
+                        <div className='relative tooltipCont'>
+                                <span className='flex border p-3 rounded-full bg-white text-blue-800 text-2xl'><SiHtml5 /></span>                                
+                            <div className='tooltip absolute my-1 z-10'>
+                                <span className='flex justify-center items-center py-2 px-4 bg-white rounded-md text-indigo-700'>
+                                    HTML
+                                </span>
+                            </div>
+                        </div>
                         </div>
                         <div className='absolute flex bottom-0 right-0 m-8'>
-                            <span className='border bg-white py-3 px-3 rounded-full text-indigo-800 text-2xl'><SiHtml5 /></span>
+                        <div className='relative tooltipCont'>
+                                <span className='flex border p-3 rounded-full bg-white text-blue-800 text-2xl'><SiNodedotjs /></span>                                
+                            <div className='tooltip absolute my-1 z-10'>
+                                <span className='flex justify-center items-center py-2 px-4 bg-white rounded-md text-indigo-700'>
+                                    NodeJs
+                                </span>
+                            </div>
+                        </div>
                         </div>
                         <div className='absolute flex bottom-0 left-0 m-8'>
-                            <span className='border bg-white py-3 px-3 rounded-full text-indigo-800 text-2xl'><SiHtml5 /></span>
+                        <div className='relative tooltipCont'>
+                                <span className='flex border p-3 rounded-full bg-white text-blue-800 text-2xl'><SiCss3 /></span>                                
+                            <div className='tooltip absolute my-1 z-10'>
+                                <span className='flex justify-center items-center py-2 px-4 bg-white rounded-md text-indigo-700'>
+                                    CSS3
+                                </span>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>

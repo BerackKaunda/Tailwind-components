@@ -28,6 +28,8 @@
   color: #61dafb;
 }
 
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +38,23 @@
     transform: rotate(360deg);
   }
 }
+
+.tooltip {
+  visibility: hidden;
+}
+
+.tooltipCont:hover .tooltip {
+  visibility: visible;
+  
+}
+
+/* .tooltipCont .tooltip::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 100%; 
+  margin-left: -20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent blue transparent;
+} */

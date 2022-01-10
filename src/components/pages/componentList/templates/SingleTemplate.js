@@ -1,4 +1,5 @@
 //External Imports
+import { useState } from 'react'
 import { FaStar } from 'react-icons/fa'
 import { FaStarHalfAlt } from 'react-icons/fa'
 import { SiTailwindcss } from "react-icons/si"
@@ -7,12 +8,25 @@ import { SiReact } from "react-icons/si"
 import { FaShoppingCart } from "react-icons/fa"
 import { FaScroll } from "react-icons/fa"
 import { FaTags } from "react-icons/fa"
-import { FcPlus } from "react-icons/fc"
+import { FcExpand } from "react-icons/fc"
+import { FcCollapse } from "react-icons/fc"
+import { FcAdvance } from "react-icons/fc"
+import { FaHourglassEnd } from "react-icons/fa"
+import { FaHistory } from "react-icons/fa"
+import { FaSyncAlt } from "react-icons/fa"
+import { FaTools } from "react-icons/fa"
 
 //Local Imports
 import Tailwind from '../../../../assets/Tailwind.png'
 
+
+
 export const SingleTemplate = () => {
+
+    const [toggle, setToggle] = useState(false);
+    const handleAccordion = () => {
+        setToggle(!toggle)
+    }
     return(
         <main>
             <div className="bg-gradient-to-r from-gray-700 to-gray-800 py-20 px-10 grid grid-cols-2 gap-10">
@@ -58,7 +72,7 @@ export const SingleTemplate = () => {
                 </div>
             </div>
             {/* product description */}
-            <div className='top-0 -mt-10 rounded-lg bg-gray-800 mx-10'>
+            <div className='top-0 -mt-10 rounded-lg bg-gray-800 mx-10 mb-16'>
                 <div className='grid grid-cols-3 gap-10 py-16 px-10'>
                     <div className='col-span-2 '>
                         <p className='text-gray-300 tracking-widest text-lg'>
@@ -122,9 +136,37 @@ Popper.js - Kickass library used to manage poppers
                                 Crafted By:
                             </h1>
                             <div className='flex py-4 justify-start gap-5'>
-                                <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
-                                <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
-                                <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                <div className='relative tooltipCont'>
+                                    <span className='flex border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                
+                                <div className='tooltip absolute my-1 z-10'>
+                                    <span className='flex justify-center items-center py-2 px-4 bg-indigo-700 rounded-md text-white'>
+                                        HTML
+                                    </span>
+                                </div>
+                                </div>
+                                <div>
+                                <div className='relative tooltipCont'>
+                                    <span className='flex border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                
+                                <div className='tooltip absolute my-1 z-10'>
+                                    <span className='flex justify-center items-center py-2 px-4 bg-indigo-700 rounded-md text-white'>
+                                        TailwindCSS
+                                    </span>
+                                </div>
+                                </div>
+                                </div>                                
+                                <div>
+                                
+                                <div className='relative tooltipCont'>
+                                <span className='flex border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>                                
+                                <div className='tooltip absolute my-1 z-10'>
+                                    <span className='flex justify-center items-center py-2 px-4 bg-indigo-700 rounded-md text-white'>
+                                        React
+                                    </span>
+                                </div>
+                                </div>
+                                </div>
                             </div>
                         </div>
                         <div className='bg-gray-700 rounded-lg py-4 px-10 my-10'>
@@ -145,35 +187,239 @@ Popper.js - Kickass library used to manage poppers
                                 <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaTags /></span>
                                     Price: $69                                    
                                 </span>
-                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaTags /></span>
+                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaHourglassEnd /></span>
                                     Released: 1 year ago                                    
                                 </span>
-                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaTags /></span>
+                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaSyncAlt /></span>
                                     Updated: 7 months ago                                    
                                 </span>
-                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaTags /></span>
-                                    Version: 1.0.0                                   
+                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaHistory /></span>
+                                    Version: v1.0.0                                   
                                 </span>
-                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaTags /></span>
+                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaTools /></span>
                                     Category: Admin Dashboards                                    
                                 </span>
-                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaTags /></span>
+                                <span className='w-full flex justify-start items-center gap-3 text-blue-300 text-md tracking-wider py-6 border-b'> <span> <FaScroll /></span>
                                     Well Documented                                    
                                 </span>
                                 
                             </div>
                         </div>
                         <div className='bg-gray-700 rounded-lg py-4 px-10  inline-block text-white text-sm space-y-2'>
-                                <span className='flex gap-1 justify-start items-center py-2 border-b border-blue-300'> <span> <FcPlus /></span> 6 months premium support included</span>
-                                <span  className='flex gap-1 justify-start items-center py-2 border-b border-blue-300'> <span> <FcPlus /></span>  100% W3C valid HTML5 files</span>
-                                <span  className='flex gap-1 justify-start items-center py-2 border-b border-blue-300'><span> <FcPlus /></span>   Future updates</span>
-                                <span  className='flex gap-1 justify-start items-center py-2 border-b border-blue-300'><span> <FcPlus /></span>   Fully responsive pages</span>
-                                <span className='flex gap-1 justify-start items-center py-2 border-b border-blue-300'><span> <FcPlus /></span>  30 day refund policy</span>
-                                <span className='flex gap-1 justify-start items-center py-2'><span> <FcPlus /></span>  Built by Themesberg</span>
+                            <div onClick={handleAccordion} className='border-b border-blue-500 cursor-pointer select-none'>
+                                <span className='flex gap-1 justify-between items-center py-2'>  6 months premium support included<span className={`${toggle ? 'hidden' : ''}`}> <FcExpand /></span> <span className={`${toggle ? '' : 'hidden'}`}><FcCollapse /></span></span>
+                                <div className={`${toggle ? '' : 'hidden'} py-2`}>
+                                    <p className='text-xs text-blue-300'>
+                                        There is an included 6 months of premium support included in our premium version, 24/7 support from our customer service
+                                    </p>
+                                </div>
+                            </div>
+                                <span  className='flex gap-1 justify-between items-center py-2 border-b border-blue-500'>   100% W3C valid HTML5 files<span> <FcExpand /></span></span>
+                                <span  className='flex gap-1 justify-between items-center py-2 border-b border-blue-500'>   Future updates<span> <FcExpand /></span></span>
+                                <span  className='flex gap-1 justify-between items-center py-2 border-b border-blue-500'>   Fully responsive pages<span> <FcExpand /></span></span>
+                                <span className='flex gap-1 justify-between items-center py-2 border-b border-blue-500'>  30 day refund policy<span> <FcExpand /></span></span>
+                                <span className='flex gap-1 justify-between items-center py-2'>  Built by Themesberg<span> <FcExpand /></span></span>
                         </div>
                 </div>
                 </div>
                 
+            </div>
+            {/* Related themes */}
+            <div className='bg-gray-800 w-full p-10 my-10'>
+                <h1 className='text-white text-2xl tracking-wider'>
+                    Related Templates
+                </h1>
+                <div className='grid grid-cols-4 gap-10 p-8'>
+
+                <div className='relative border border-gray-400 rounded-md overflow-hidden '>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div className='relative border border-gray-400 rounded-md overflow-hidden'>
+                            <div className=''>
+                            <div className='absolute bg-purple-800 rounded-md w-full h-full bg-opacity-0 opacity-0 hover:bg-opacity-75 hover:opacity-75 '>
+                                <div className='absolute w-full flex flex-row justify-center top-1/3 space-x-2 hover:bg-transparent'>
+                                    <span className='border bg-white p-3 rounded-full text-blue-800 text-2xl'><SiHtml5 /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiTailwindcss /></span>
+                                    <span className='border p-3 rounded-full bg-white text-blue-800 text-2xl '><SiReact /></span>
+                                </div>
+                            </div>
+                            <img className='object-cover overflow-hidden rounded-t-md' src={ Tailwind } alt="" />
+                            <div className='block p-2 '>
+                                <div className='flex justify-between'>
+                                    <span className='text-gray-400 text-md font-bold'>
+                                        React Dashboard Pro 2
+                                    </span>
+                                    <span className='text-blue-500 font-bold font-mono text-md'>
+                                        $69
+                                    </span>
+                                </div>
+                                <div>
+                                    <p className='text-gray-400 text-sm '>
+                                        Premium React Admin Tempalate
+                                    </p> 
+                                </div> 
+                                <div className='flex flex-row gap-4 pt-1'>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        React
+                                    </span>
+                                    <span className='bg-blue-500 px-2 rounded-2xl text-white text-sm font-medium flex items-center'>
+                                        TailwindCss
+                                    </span>
+                                </div>                                
+                            </div>
+                            </div>
+                            
+                        </div>
+
+                </div>
+
+                <div className='flex justify-center items-center p-10'>
+                    <button className='flex justify-center items-center gap-5 py-3 px-10 rounded-3xl text-blue-500 border border-blue-500  text-xl font-mono tracking-wider '>
+                        View All Products <span className='hover:animate-bounce'><FcAdvance /></span>
+                    </button>
+                </div>
+
             </div>
         </main>
     )
